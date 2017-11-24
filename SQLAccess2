@@ -1,0 +1,4 @@
+SELECT*
+FROM Orders
+WHERE NOT Shipdate <= #01/01/2013#
+OR State = "California"
