@@ -1,4 +1,1 @@
-SELECT*
-FROM Orders
-WHERE OrderDate BETWEEN  #7/31/2012# AND #11/12/2010#
-AND Country ="United States"
+Hello
