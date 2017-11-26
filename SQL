@@ -1,8 +1,0 @@
-SELECT Customer.country, Customer.FirstName, customer.lastname, count(trackid) AS Songs_bought
-FROM Customer
-JOIN Invoice
-ON Invoice.CustomerId = Customer.CustomerId
-JOIN InvoiceLine
-ON Invoice.InvoiceId = InvoiceLine.InvoiceId
-GROUP BY Invoice.total
-ORDER BY songs_bought desc
