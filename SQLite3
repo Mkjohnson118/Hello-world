@@ -1,0 +1,10 @@
+SELECT  artist.Name, COUNT(track.trackid) AS Songs_Sold
+FROM Artist
+JOIN Track
+ON Artist.ArtistId = Track.AlbumId
+JOIN InvoiceLine
+ON Track.trackid = InvoiceLine.trackid
+JOIN Invoice
+ON Invoice.InvoiceId = InvoiceLine.InvoiceId
+GROUP BY artist.Name
+ORDER BY Songs_Sold desc
