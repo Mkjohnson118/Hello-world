@@ -1,0 +1,3 @@
+SELECT AVG(Orders.Sales) AS Avg, Orders.Country, Count(Order.sales) As Count
+FROM Orders
+GROUP BY Country
